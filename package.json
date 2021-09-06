@@ -1,0 +1,25 @@
+{
+  "name": "eslint-config-haaxor1689s-config",
+  "version": "1.0.0",
+  "description": "ESlint configuration based on my personal preferences",
+  "main": "index.js",
+  "author": "Haaxor1689",
+  "license": "MIT",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-react": "^7.25.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Haaxor1689/eslint-config-haaxor1689s-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Haaxor1689/eslint-config-haaxor1689s-config/issues"
+  },
+  "homepage": "https://github.com/Haaxor1689/eslint-config-haaxor1689s-config"
+}
