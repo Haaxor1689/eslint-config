@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-haaxor1689s-config",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "ESlint configuration based on my personal preferences",
   "main": "index.js",
   "author": "Haaxor1689",
