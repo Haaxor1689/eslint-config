@@ -27,20 +27,21 @@ module.exports = {
     'react',
     '@typescript-eslint',
     'eslint-plugin-prefer-arrow',
-    'jsx-a11y'
+    'jsx-a11y',
+    'prettier'
   ],
   rules: {
-    indent: 'off',
+    'indent': 'off',
     'linebreak-style': ['error', 'unix'],
-    quotes: ['error', 'single'],
-    semi: ['error', 'always'],
+    'quotes': ['error', 'single'],
+    'semi': ['error', 'always'],
     'no-template-curly-in-string': ['error'],
     'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
     'no-var': 'error',
     'no-useless-rename': 'error',
     'object-shorthand': ['error', 'always'],
     'comma-dangle': ['error', 'never'],
-    eqeqeq: ['error', 'always'],
+    'eqeqeq': ['error', 'always'],
     'dot-notation': 'error',
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
@@ -78,7 +79,7 @@ module.exports = {
       'error',
       {
         'newlines-between': 'always',
-        groups: [
+        'groups': [
           'builtin',
           'external',
           'internal',
@@ -90,21 +91,16 @@ module.exports = {
     ]
   },
   settings: {
-    react: {
-      version: 'detect'
-    },
-    'import/resolver': {
-      node: {
-        paths: 'src'
-      }
-    }
+    // Fix react version detection
+    'react': { version: 'detect' },
+    // Set src folder path
+    'import/resolver': { node: { paths: 'src' } }
   },
   overrides: [
+    // Disable prop-types errors clashing with typescript options
     {
       files: ['**/*.tsx'],
-      rules: {
-        'react/prop-types': 'off'
-      }
+      rules: { 'react/prop-types': 'off' }
     }
   ]
 };
