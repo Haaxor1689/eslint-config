@@ -31,10 +31,12 @@ module.exports = {
     'prettier'
   ],
   rules: {
+    // Turn off prettier related
     'indent': 'off',
-    'linebreak-style': ['error', 'unix'],
-    'quotes': ['error', 'single'],
-    'semi': ['error', 'always'],
+    'quotes': 'off',
+    'linebreak-style': 'off',
+    'semi': 'off',
+    // General
     'no-template-curly-in-string': ['error'],
     'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
     'no-var': 'error',
