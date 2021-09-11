@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es2021: true
   },
   extends: [
     'eslint:recommended',
@@ -11,22 +11,23 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:jsx-a11y/recommended',
+    'plugin:prettier/recommended'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     jsx: true,
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     project: './tsconfig.json',
     sourceType: 'module',
-    ecmaVersion: 2018,
+    ecmaVersion: 2018
   },
   plugins: [
     'react',
     '@typescript-eslint',
     'eslint-plugin-prefer-arrow',
-    'jsx-a11y',
+    'jsx-a11y'
   ],
   rules: {
     indent: 'off',
@@ -37,9 +38,10 @@ module.exports = {
     'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
     'no-var': 'error',
     'no-useless-rename': 'error',
+    'object-shorthand': ['error', 'always'],
+    'comma-dangle': ['error', 'never'],
     eqeqeq: ['error', 'always'],
     'dot-notation': 'error',
-    'arrow-body-style': ['error', 'as-needed'],
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
     'prefer-template': 'error',
@@ -49,8 +51,8 @@ module.exports = {
       'error',
       {
         namedComponents: 'arrow-function',
-        unnamedComponents: 'arrow-function',
-      },
+        unnamedComponents: 'arrow-function'
+      }
     ],
     'react/react-in-jsx-scope': 'off',
     'react/self-closing-comp': 'error',
@@ -68,8 +70,8 @@ module.exports = {
     '@typescript-eslint/prefer-nullish-coalescing': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-unused-vars': [
-      'warn',
-      { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
+      'error',
+      { argsIgnorePattern: '^_', varsIgnorePattern: '^_', args: 'after-used' }
     ],
     // Import
     'import/order': [
@@ -82,27 +84,27 @@ module.exports = {
           'internal',
           'parent',
           'sibling',
-          'index',
-        ],
-      },
-    ],
+          'index'
+        ]
+      }
+    ]
   },
   settings: {
     react: {
-      version: 'detect',
+      version: 'detect'
     },
     'import/resolver': {
       node: {
-        paths: 'src',
-      },
-    },
+        paths: 'src'
+      }
+    }
   },
   overrides: [
     {
       files: ['**/*.tsx'],
       rules: {
-        'react/prop-types': 'off',
-      },
-    },
-  ],
+        'react/prop-types': 'off'
+      }
+    }
+  ]
 };
