@@ -41,6 +41,7 @@ module.exports = {
     'no-useless-rename': 'error',
     'object-shorthand': ['error', 'always'],
     'comma-dangle': ['error', 'never'],
+    'arrow-body-style': ['error', 'as-needed'],
     'eqeqeq': ['error', 'always'],
     'dot-notation': 'error',
     'prefer-arrow-callback': 'error',
@@ -71,8 +72,8 @@ module.exports = {
     '@typescript-eslint/prefer-nullish-coalescing': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-unused-vars': [
-      'error',
-      { argsIgnorePattern: '^_', varsIgnorePattern: '^_', args: 'after-used' }
+      'warn',
+      { args: 'all', argsIgnorePattern: '^_', varsIgnorePattern: '^_' }
     ],
     // Import
     'import/order': [
