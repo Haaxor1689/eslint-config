@@ -17,6 +17,9 @@
     "eslint-plugin-react": "^7.25.1",
     "prettier-config-haaxor1689s-config": "^1.0.3"
   },
+  "peerDependencies": {
+    "typescript": "^4.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Haaxor1689/eslint-config-haaxor1689s-config.git"
