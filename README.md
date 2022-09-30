@@ -1,23 +1,27 @@
-ESlint configuration based on my personal preferences
+Eslint config I use in my projects
 
 ## Usage
 
-To use this config, you can add it under `eslintConfig` key to your `package.json` or add it to your existing eslint config.
+First install the package
+
+```bash
+yarn add --D @haaxor1689/eslint-config
+```
+
+Install peer dependencies
+
+```bash
+npx install-peerdeps --dev @haaxor1689/eslint-config
+```
+
+Next add it under `eslintConfig` key to your `package.json` or add it to your existing eslint config.
 
 ```jsonc
+// package.json
 {
   // ...
   "eslintConfig": {
-    "extends": "haaxor1689s-config"
+    "extends": "@haaxor1689/eslint-config"
   }
-}
-```
-
-This package also contains prettier config that can be enabled by adding `prettier` key to your `package.json`.
-
-```jsonc
-{
-  // ...
-  "prettier": "prettier-config-haaxor1689s-config"
 }
 ```
