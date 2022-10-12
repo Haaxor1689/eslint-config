@@ -1,6 +1,6 @@
 {
   "name": "@haaxor1689/eslint-config",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Eslint config I use in my projects",
   "main": "config.js",
   "author": "Haaxor1689",
@@ -14,7 +14,6 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.27.1",
     "prettier": "^2.7.1",
     "typescript": "^4.8.4"
   },
