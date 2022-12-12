@@ -1,15 +1,17 @@
 {
   "name": "@haaxor1689/eslint-config",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Eslint config I use in my projects",
   "main": "config.js",
   "author": "Haaxor1689",
   "license": "MIT",
   "peerDependencies": {
+    "@haaxor1689/prettier-config": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "^5.38.1",
     "@typescript-eslint/parser": "^5.38.1",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.2",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-prefer-arrow": "^1.2.3",

@@ -15,15 +15,14 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    jsx: true,
-    ecmaFeatures: {
-      jsx: true
-    },
+    ecmaFeatures: { jsx: true },
     project: './tsconfig.json',
     sourceType: 'module',
-    ecmaVersion: 2018
+    ecmaVersion: 'latest'
   },
+  ignorePatterns: ['/**/*.md', '/**/*.html'],
   plugins: [
+    'import',
     'react',
     '@typescript-eslint',
     'eslint-plugin-prefer-arrow',
@@ -97,7 +96,17 @@ module.exports = {
     // Fix react version detection
     'react': { version: 'detect' },
     // Set src folder path
-    'import/resolver': { node: { paths: 'src' } }
+    'import/resolver': {
+      node: { paths: 'src' },
+      typescript: {
+        extensionAlias: {
+          '.js': ['.ts', '.tsx', '.d.ts', '.js'],
+          '.jsx': ['.tsx', '.d.ts', '.jsx'],
+          '.cjs': ['.cts', '.d.cts', '.cjs'],
+          '.mjs': ['.mts', '.d.mts', '.mjs']
+        }
+      }
+    }
   },
   overrides: [
     // Disable prop-types errors clashing with typescript options
