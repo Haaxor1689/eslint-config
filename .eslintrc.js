@@ -20,7 +20,7 @@ module.exports = {
     sourceType: 'module',
     ecmaVersion: 'latest'
   },
-  ignorePatterns: ['/**/*.md', '/**/*.html'],
+  ignorePatterns: ['/vite.config.ts', '/**/*.md', '/**/*.html'],
   plugins: [
     'import',
     'react',
