@@ -1,4 +1,4 @@
-Eslint config I use in my projects. Also comes with a Prettier config.
+Eslint config for React + Next + Tailwind projects. Also comes with a Prettier config.
 
 ## Usage
 

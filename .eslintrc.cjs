@@ -1,3 +1,4 @@
+/** @type {import("eslint").Linter.Config} */
 module.exports = {
   env: {
     browser: true,
@@ -5,6 +6,7 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    'next/core-web-vitals',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/typescript',
@@ -52,10 +54,7 @@ module.exports = {
     // React
     'react/function-component-definition': [
       'error',
-      {
-        namedComponents: 'arrow-function',
-        unnamedComponents: 'arrow-function'
-      }
+      { namedComponents: 'arrow-function', unnamedComponents: 'arrow-function' }
     ],
     'react/react-in-jsx-scope': 'off',
     'react/self-closing-comp': 'error',
@@ -75,6 +74,10 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': [
       'warn',
       { args: 'all', argsIgnorePattern: '^_', varsIgnorePattern: '^_' }
+    ],
+    '@typescript-eslint/consistent-type-imports': [
+      'warn',
+      { prefer: 'type-imports', fixStyle: 'inline-type-imports' }
     ],
     // Import
     'import/order': [
